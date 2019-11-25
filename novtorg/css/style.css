@@ -482,8 +482,7 @@ header{
 }
 .section-2{
 	width: 100%;
-	height: 300vh;
-	background-color: #fff;
+	background-color: #F5F5F5;
 	text-align: center;
 	-ms-align-items: center;
 	align-items: center;
@@ -493,16 +492,31 @@ header{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
 	padding: 50px 0 50px 0;
 }
+.section-2 h1{
+	text-transform: uppercase;
+	font-family: "Open sans";
+	font-weight: 500;
+	margin-top: 20px;
+}
 .wrapper-sell{
-	width: 70%;
+	width:70%;
 	height: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	background-color: #fff;
+	border: solid 1px #CFCFCF;
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+	border-radius: 15px;
 	-ms-align-items: center;
 	align-items: center;
 	text-align: center;
@@ -514,7 +528,7 @@ header{
 }
 .wrapper-card{
 	width: 100%;
-	height: 20%;
+	height: 32%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -549,6 +563,14 @@ header{
 	justify-content: space-between;
 	transition: 0.5s;
 }
+.card-header{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 20%;
+}
 .card-header h3{
 	text-transform: uppercase;
 	font-weight: 500;
@@ -571,8 +593,9 @@ header{
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	margin-top: 10%;
 	width: 90%;
-	height: 60%;
+	height: 50%;
 }
 .href-button{
 	width: 60%;
@@ -581,6 +604,18 @@ header{
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
+}
+.card-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	height: 10%;
+	z-index: 9999;
+}
+.card-info h2{
+	font-weight: 400;
 }
 .card-button{
 	display: -webkit-flex;
@@ -604,6 +639,27 @@ header{
 .card-button:hover{
 	background-color: #198019;
 	border: solid 2px #198019;
+}
+.wrapper-more{
+}
+.more-button{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-transform: uppercase;
+	font-family: 'Open sans';
+	background-color: #20AB20;
+	border: solid 2px #20AB20;
+	border-radius: 2px;
+	color: #fff;
+	text-align: center;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
 }
 .footer{
 	height: 30vh;
